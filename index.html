@@ -13,13 +13,15 @@
 	<link rel="stylesheet" type="text/css" href="css/play-song.css">
 	<link rel="stylesheet" type="text/css" href="css/form.css">
 	<link rel="stylesheet" type="text/css" href="css/top-bar.css">
-		
+	<link href='http://cdn.webfont.youziku.com/webfonts/nomal/119100/45803/5b114824f629d90c404435ea.css' rel='stylesheet' type='text/css' />	
 
 </head>
 <body >
 		<!--顶部栏选项  -->
 		<div id="top-bar">
 		<img id="top-bar-pic1" src="img/music.png">
+		<text id="top-bar-text1">forever | music</text>
+
 		<div id="login">
 			<p>登录/注册</p>
 		</div>
@@ -65,7 +67,7 @@
 					<div class="inp">
 						<input type="password" placeholder="密码" />
 					</div>
-					<div class="login">				
+					<div class="inp">				
 						<input type="submit" name="search-submit" value="登录" />
 					</div>
 
@@ -73,7 +75,7 @@
 				</div>
 			</form>
 
-			<form action="DatabaseAccess" method="POST">
+			<form action="register" method="POST">
 				<div id="registered-content">
 					<div class="inp">
 						<input type="text" name="name" placeholder="请输入用户名" />
@@ -87,11 +89,12 @@
 					<div class="inp">
 						<input type="text" name="email" placeholder="电子邮箱" />
 					</div>
-					<div class="login">
+					<div class="inp">
 					<input type="submit" name="submit"  value="立即注册">
 					</div>
 				</div>
 			</form>
+
 		</div>
 
 

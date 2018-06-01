@@ -8,9 +8,15 @@
 	width: 50px;
 	position: absolute;
 	top: 10px;
-	left: 1000px;
+	left: 0px;
 }
 
+#top-bar-text1{
+	position: absolute;
+	left: 50px;
+	font-family:'LiDeBiao-Xing31260ab182a1d13c';
+	font-size: 40px;
+}
 #login{
 
     position: absolute;
