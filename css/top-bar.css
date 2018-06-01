@@ -1,0 +1,19 @@
+#top-bar{
+
+	background-color: white;
+	width: 1535px;
+	height:60px;
+}
+#top-bar-pic1{
+	width: 50px;
+	position: absolute;
+	top: 10px;
+	left: 1000px;
+}
+
+#login{
+
+    position: absolute;
+	top: 15px;
+	left: 1300px;
+}

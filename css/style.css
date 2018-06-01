@@ -1,0 +1,41 @@
+.input-text{
+
+
+	height: 40px;
+	width: 300px;
+	border-color: black;
+	border: 0;
+}
+
+.input-submit{
+	background-image: url(../images/search-button.jpg);
+	width: 40px;
+	height: 40px;
+	border: 0;
+	float: right;
+	cursor: pointer;
+
+}
+.input-submit:hover{
+	background-image: url(../images/search-button2.jpg);
+	width: 40px;
+	height: 40px;
+	border: 0;
+	float: right;
+	cursor: pointer;
+
+}
+body{
+
+	background-color:  	#87CEFA;
+}
+
+#searchSquare{
+
+	position: absolute;
+	top: 250px;
+	left: 600px;
+	display: inline;
+
+}
+
