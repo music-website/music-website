@@ -3,9 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>forever | music</title>
-	
-
-	
+	<meta name = "keywords" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="css/animate.min.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
@@ -20,24 +18,26 @@
 <body >
 		<!--顶部栏选项  -->
 		<div id="top-bar">
-		<img id="top-bar-pic1" src="images/index/music.png">
-		<!-- 搜索框 -->
+			<div class=".col-3"> 
+				<img id="top-bar-pic1" src="images/index/music.png">
+				<!-- 搜索框 -->
 	
-			<text class="search-text1">forever | music</text>
+				<text class="search-text1">forever | music</text>
+			</div>
 
-			<div class="bar_item" id="bar_item1">
-				<text class="bar_item_name">发现</text>
+			<div class=".col-3">                              
+				<ul class="selectul">
+					<div class="part">
+					<li class="select"><a class="text1" id="select1" href="">发现</a></li>
+					<li class="select"><a class="text1" id="select2" href="">我的</a></li>
+					<li class="select"><a class="text1" id="select3" href="">朋友</a></li>	
+				</ul>
 			</div>
-			<div class="bar_item" id="bar_item2">
-				<text class="sbar_item_name">我的</text>
-			</div>
-			<div class="bar_item" id="bar_item3">
-				<text class="bar_item_name">朋友</text>
-			</div>
+
 
 			<form id="searchSquare">
 			
-				<input type="text" name="search" class="input-text" placeholder="搜索歌曲、歌手">
+				<input type="text" name="search" class="input-text" placeholder="&nbsp;搜索歌曲、歌手">
 				<input type="submit" name="submit" class="input-submit" value="">
 			</form>
 		<div id="login">
@@ -71,7 +71,7 @@
 
 			<form>
 				<div id="landing-content">
-					<div id="photo"><img src="img/music.PNG" /></div>
+					<div id="photo"><img src="images/index/unknown.png" /></div>
 
 					<div class="inp">
 						<input type="text" placeholder="用户名" />
