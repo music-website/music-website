@@ -2,19 +2,86 @@
 
 	background-color: white;
 	width: 1535px;
-	height:60px;
+	height:75px;
 }
 #top-bar-pic1{
 	width: 50px;
 	position: absolute;
 	top: 10px;
-	left: 0px;
+	left: 120px;
 }
 
 
 #login{
 
     position: absolute;
-	top: 15px;
+	top: 23px;
 	left: 1300px;
+}
+
+.input-text{
+	height: 40px;
+	width: 250px;
+	position: absolute;
+	border-color: black;
+	border: 0;
+}
+
+.input-submit{
+	background-image: url(../images/index/search1.png);
+	background-size:20px 20px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 10px;
+	left:220px;
+	border: 0;
+	float: right;
+	cursor: pointer;
+
+}
+.input-submit:hover{
+	background-image: url(../images/index/search2.png);
+	background-size:20px 20px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 10px;
+	left:220px;
+	border: 0;
+	float: right;
+	cursor: pointer;
+
+}
+
+#searchSquare{
+
+	position: absolute;
+	top: 15px;
+	left: 1000px;
+	display: inline;
+
+}
+
+#search-text1{
+	position: absolute;
+	top:13px;
+	left: 200px;
+	font-size: 30px;
+}
+
+.bar_item{
+
+
+}
+
+.bar_item1{
+	left: 200px;
+}
+.bar_item:hover{
+	background-color: 
+}
+
+.bar_item_name{
+	font-size: 20px;
 }
