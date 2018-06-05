@@ -88,11 +88,12 @@ li a:hover {
     font-weight: 10px;
 }
 
-#login{
+#login-text{
 
     position: absolute;
 	top: 23px;
 	right: 3%;
+	cursor: pointer;
 }
 
 .input-text{
