@@ -43,8 +43,16 @@ $(document).ready(function() {
 				$("#close").click(function(){
 
 					$("#user-prompt").show();
+					$("#password-prompt").show();
 					$("#user-warn1").hide();
 					$("#user-warn2").hide();
+					$("#user-warn3").hide();
+					$("#password-warn1").hide();
+					$("#password-warn2").hide();
+					$("#password-warn3").hide();
+					$("#repassword-warn1").hide();
+					
+
 					$(".form").hide();
 				})
 
@@ -53,13 +61,18 @@ $(document).ready(function() {
 
 				})
 
-				// 隐藏注册提示
+				// 隐藏注册警告
 				$("#user-warn1").hide();
 				$("#user-warn2").hide();
+				$("#user-warn3").hide();
+				$("#password-warn1").hide();
+				$("#password-warn2").hide();
+				$("#password-warn3").hide();
+				$("#repassword-warn1").hide();
 
 
-				//检验注册时的输入
-			$("#register").click(function(){
+				//检验注册时的输入加入注册点击事件
+	$("#register").click(function(){
 
 					/**校验用户名*/
                 //1.获取用户输入的数据
@@ -70,6 +83,7 @@ $(document).ready(function() {
                       $("#user-warn1").show();
                       $("#user-prompt").hide();
                       $("#user-warn2").hide();
+                      $("#user-warn3").hide();
                       return false;
                   }
                   //判断用户名是否含有空格
@@ -77,15 +91,50 @@ $(document).ready(function() {
        			 	$("#user-warn2").show();
                     $("#user-prompt").hide();
                     $("#user-warn1").hide();
+                    $("#user-warn3").hide();
+                    return false;
    				 } 
+   				 //用户名长度不能超过15	
+   				 if (strlen(uValue)>15)
+   				 {
+
+   				 	$("#user-warn3").show();
+                    $("#user-prompt").hide();
+                    $("#user-warn1").hide();
+                    $("#user-warn2").hide();
+                    return false;
+   				 }
         			 
                   
                   /**校验密码*/
                  var pValue=document.getElementById("password").value;
+                 //
                   if(pValue==""){                   //注意空的表示方法
-                      alert("密码不能为空");
+                      $("#password-warn1").show();
+                      $("#password-prompt").hide();
+                      $("#password-warn2").hide();
+                      $("#password-warn3").hide();
                       return false;
                   }
+
+                  //密码不能含有空格
+                  if (pValue.indexOf(" ") != -1) {  
+                  	  $("#password-warn2").show();
+                      $("#password-prompt").hide();
+                      $("#password-warn1").hide();
+                      $("#password-warn3").hide();
+                    return false;
+   				 } 
+
+   				  //密码至少为9位
+   				  if (strlen(pValue)<9)
+   				 {
+   				 	  $("#password-warn3").show();
+                      $("#password-prompt").hide();
+                      $("#password-warn1").hide();
+                      $("#password-warn2").hide();
+                    return false;
+   				 }
                       
                   /** 校验确认密码*/
                   var rpValue=document.getElementById("repassword").value;
