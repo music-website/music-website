@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="css/form.css">
 	<link rel="stylesheet" type="text/css" href="css/top-bar.css">
 	<link rel="stylesheet" type="text/css" href="css/search.css">
+	<link rel="stylesheet" type="text/css" href="css/picBox.css">
 	
 
 </head>
@@ -29,7 +30,8 @@
 					<div class="part">
 					<li class="select"><a class="text1" id="select1" href="">发现</a></li>
 					<li class="select"><a class="text1" id="select2" href="">我的</a></li>
-					<li class="select"><a class="text1" id="select3" href="">朋友</a></li>	
+					<li class="select"><a class="text1" id="select3" href="">朋友</a></li>
+					</div>	
 				</ul>
 			</div>
 
@@ -44,6 +46,46 @@
 			</div> 
  
 		</div>
+		
+		<!-- 发现 -->
+	<div class="Box">
+    	<div class="content">
+    		
+    		
+    		<div class="Box_con clearfix">
+
+    			<img src="img/jtl02.png" class="btnl btn" id="btnl">
+    			<img src="img/jtr02.png" class="btnr btn" id="btnr">
+    			
+    			<div class="conbox" id="BoxUl">
+	    			<ul>
+	    				<li class="cur"><img src="img/1.jpg" title=""/></li>
+	    				
+	    				<li class="cur"><img src="img/2.jpg" title=""/></li>
+	    				
+	    				<li class="cur"><img src="img/3.jpg" title=""/></li>
+	    			
+	    				<li class="cur"><img src="img/4.jpg" title=""/></li>
+	    				
+	    				<li class="cur"><img src="img/5.jpg" title=""/></li>
+    				</ul>
+    			</div>
+    			
+    			<p class="BoxSwitch" id="BoxSwitch">
+    				<span class="cur"></span>
+    				<span></span>
+    				<span></span>
+    				<span></span>
+    			</p>
+    			
+    		</div>
+    		
+    	</div>
+    </div>
+		
+
+
+
 
 <!-- 	<ul>
 		<li>
@@ -205,5 +247,11 @@
 <script type="text/javascript" src="js/audio.js"></script>
 <script type="text/javascript" src="js/song.js"></script>
 <script type="text/javascript" src="js/form.js"></script>
+<script type="text/javascript" src="js/Lunbo.js" ></script>
+<script type="text/javascript">
+    	//滚动元素id，左切换按钮，右切换按钮，切换元素个数id,滚动方式，切换方向，是否自动滚动，滚动距离，滚动时间，滚动间隔，显示个数
+    	LbMove('BoxUl','btnl','btnr','BoxSwitch',true,'left',true,305,1000,5000,4);
+</script>
+
 
 </html>
