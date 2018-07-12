@@ -389,3 +389,23 @@
 		return _this;
 	}
 })(jQuery)
+
+$(document).ready(function() {
+
+
+	$(".audio-box").hide();
+	$(".hide-audio").hide();
+	$(".show-audio").click(function() {
+		$(".audio-box").show();
+		$(".show-audio").hide();
+		$(".hide-audio").show();
+	})
+
+	$(".hide-audio").click(function() {
+		$(".audio-box").hide();
+		$(".show-audio").show();
+		$(".hide-audio").hide();
+	})
+
+
+});
