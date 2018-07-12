@@ -1,20 +1,84 @@
-			.Box {position: : relative;}
+.Box {position: : relative;}
 
-			.Box .content {width: 1200px;margin: 0 auto;}
-			.Box .Box_con {position: relative;top: 100px;}
-			.Box .Box_con .btnl {position: absolute;}
-			.Box .Box_con .btn {display: block;width: 41px;height: 41px;position: absolute;top: 80px;cursor: pointer;}
-			.Box .Box_con .btnl {/*background: url(img/jtl02.png)*/ /*no-repeat center;*/left: -72px;}
-			.Box .Box_con .btnr {/*background: url(img/jtr02.png) *//*no-repeat center;*/right: -72px;}
-		/*	.Box .Box_con .btnl:hover {background: url(img/jtl03.png) no-repeat center;}
-			.Box .Box_con .btnr:hover {background: url(img/jtr03.png) no-repeat center;}*/
-			.Box .Box_con .conbox {position: relative;overflow: hidden;}
-			.Box .Box_con .conbox ul {position: relative;list-style: none;}
-			.Box .Box_con .conbox ul li {float: left;width: 285px;height: 230px;margin-left: 20px;overflow: hidden;}
-			.Box .Box_con .conbox ul li:first-child {margin-left: 0;}
-			.Box .Box_con .conbox ul li img {display: block;width: 285px;height: 230px;transition: all 0.5s;}
-			.Box .Box_con .conbox ul li:hover img {transform: scale(1.1);}
-			.Box .Box_con .conbox ul li img:hover{background-image: url(../images/play.png);}
-			.Box .BoxSwitch {margin-top: 30px;text-align: center;}
-			.Box .BoxSwitch span {display: inline-block;*display: inline;*zoom: 1;vertical-align: middle;width: 30px;height: 3px;background: #ccc;margin: 0 5px;cursor: pointer;}
-			.Box .BoxSwitch span.cur {background: red;}
+.gallery1｛
+	
+｝
+
+.slideshow-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: 50px;
+  height: 50px;
+  padding: 16px;
+  margin-top: -22px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 44px;
+  transition: 0.6s ease;
+  border-radius: 100px;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.3);
+}
+
+.number {
+  color: white;
+  font-size: 20px;
+  font-family: verdana;
+  background-color: rgba(155,155,155,0.5)
+  padding: 20px 30px;
+  position: absolute;
+  top: 5px;
+  left: 7px;
+}
+
+.dot {
+  cursor:pointer;
+  height: 10px;
+  width: 10px;
+  margin: 2%;
+  margin-top: 1%;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    z-indexwebkit-animation-name: fade;
+    z-indexwebkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
