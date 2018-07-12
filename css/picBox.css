@@ -1,8 +1,10 @@
 .Box {position: : relative;}
 
-.gallery1｛
+.gallery1{
+  width: 60%;
+  margin :0 auto;
+}
 	
-｝
 
 .slideshow-container {
   width: 100%;
