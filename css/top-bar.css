@@ -45,7 +45,7 @@ body, html {
 
 #top-bar{
 	width: 100%;
-    height:auto;
+    height: 75px;
     top: 0%;
     padding: 0px;
     margin: 0px;
@@ -53,7 +53,7 @@ body, html {
  }
    
 #top-bar-pic1{
-	width: 64px;
+	width: 50px;
 	position: absolute;
 	top: 15px;
 	left: 120px;
@@ -69,7 +69,7 @@ body, html {
     padding-bottom: 0px;
     padding-left: 50px;
     padding-right: 50px;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 10px;
     font-family: verdana;
 }
@@ -84,7 +84,7 @@ li a:hover {
 }
 .text1 {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 10px;
 }
 
@@ -146,7 +146,7 @@ li a:hover {
 	position: relative;
 	top:24px;
 	left: 200px;
-	font-size: 30px;
+	font-size: 25px;
 }
 
 .bar_item{
