@@ -1,3 +1,16 @@
+.show-audio{
+  position: fixed;
+  top :300px;
+  left: 0px;
+}
+
+.hide-audio{
+  position: fixed;
+    top :300px;
+  left: 0px;
+}
+
+
 .Box {position: : relative;}
 
 .gallery1{
