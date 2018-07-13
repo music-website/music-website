@@ -1,5 +1,4 @@
 
-
 $(function(){
 	var song = [
 	
@@ -15,8 +14,6 @@ $(function(){
 		song : song,
 		autoPlay : false  //是否立即播放第一首，autoPlay为true且song为空，会alert文本提示并退出
 	});
-
-
 
 	/* 暂停播放 */
 	//audioFn.stopAudio();
@@ -52,10 +49,7 @@ window.onload=function (){
 				return false;
 			}
 		}
-
 }
-
-
 	
 });
 	
